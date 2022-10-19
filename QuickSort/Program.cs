@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -106,7 +107,7 @@ namespace QuickSort
         }
         void display()
         {
-            Console.Writeline("\n---------------------");
+            Console.WriteLine("\n---------------------");
             Console.WriteLine(" Sorted array elements ");
             Console.WriteLine("\n---------------------");
 
@@ -116,6 +117,10 @@ namespace QuickSort
             }
             Console.WriteLine("\nNumber of comparisons: " + cmp_count);
             Console.WriteLine("\nNumber of data movements: " + mov_count);
+        }
+        int getSize()
+        {
+            return (n);
         }
     }
 }
